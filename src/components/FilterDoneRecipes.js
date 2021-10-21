@@ -12,7 +12,6 @@ export default function FilterDoneRecipes() {
 
   useEffect(() => {
     setDoneRecipes(storage);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function filter(param = '') {
@@ -22,13 +21,6 @@ export default function FilterDoneRecipes() {
     const result = doneRecipes.filter((rec) => rec.type === param);
     return result;
   }
-
-  // function disable() {
-  //   if (storage.lentgh === 0) {
-  //     return true;
-  //   }
-  //   return false;
-  // }
 
   function clickCard(type, id) {
     console.log(type);
@@ -43,21 +35,18 @@ export default function FilterDoneRecipes() {
     <div>
       <div>
         <Button
-          // disabled={ disable }
           data-testid="filter-by-all-btn"
           onClick={ () => setFil() }
         >
           All
         </Button>
         <Button
-          // disabled={ disable }
           data-testid="filter-by-food-btn"
           onClick={ () => setFil('comida') }
         >
           Food
         </Button>
         <Button
-          // disabled={ disable }
           data-testid="filter-by-drink-btn"
           onClick={ () => setFil('bebida') }
         >

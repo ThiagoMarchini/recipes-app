@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
@@ -17,8 +17,9 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
     "react-logger": "^1.1.0",
+    "react-router": "^5.2.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^4.0.3",
     "websocket-extensions": ">=0.1.4"
   },
   "scripts": {
@@ -30,9 +31,6 @@
     "test-coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -48,16 +46,16 @@
   },
   "devDependencies": {
     "clipboardy": "^2.1.0",
-    "cypress": "^3.8.3",
+    "cypress": "^8.6.0",
     "cypress-multi-reporters": "^1.4.0",
-    "eslint": "6.8.0",
-    "eslint-config-trybe-frontend": "1.2.0",
+    "eslint": "^7.11.0",
+    "eslint-config-trybe-frontend": "^1.2.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "fs-extra": "^9.0.1",
     "mocha": "^8.0.1",
-    "mochawesome": "^6.1.1",
+    "mochawesome": "^3.1.2",
     "mochawesome-merge": "^4.1.0",
-    "mochawesome-report-generator": "^5.1.0",
+    "mochawesome-report-generator": "^3.1.5",
     "stylelint": "^13.8.0",
     "stylelint-order": "^4.1.0"
   },

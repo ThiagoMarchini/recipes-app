@@ -36,7 +36,6 @@ function RecipeResults() {
     };
 
     getRecipesByCategory();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categoryFilter, categoryEndpoint, idType]);
 
   const doze = 12;
